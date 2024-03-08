@@ -1,4 +1,4 @@
-vim.opt.background = "dark"
+vim.opt.background = "light"
 
 vim.g.gruvbox_material_enable_bold = 0
 vim.g.gruvbox_material_enable_italic = 0

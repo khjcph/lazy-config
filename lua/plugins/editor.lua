@@ -2,11 +2,13 @@ return {
   { "folke/todo-comments.nvim", enabled = false },
 
   {
-    "simrat39/symbols-outline.nvim",
+    "hedyhli/outline.nvim",
     optional = true,
 
     opts = {
-      position = "left",
+      outline_window = {
+        position = "left",
+      },
     },
   },
 
