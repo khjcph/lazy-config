@@ -3,7 +3,7 @@ vim.opt.background = "light"
 vim.g.gruvbox_material_enable_bold = 0
 vim.g.gruvbox_material_enable_italic = 0
 vim.g.gruvbox_material_disable_italic_comment = 0
-vim.g.gruvbox_material_background = "medium"
+vim.g.gruvbox_material_background = "soft"
 vim.g.gruvbox_material_foreground = "material"
 
 return {
@@ -15,7 +15,7 @@ return {
     name = "catppuccin",
     opts = {
       background = {
-        dark = "frappe",
+        dark = "mocha",
         light = "latte",
       },
     },
@@ -70,12 +70,12 @@ return {
 
     opts = {
       -- colorscheme = "catppuccin",
-      -- colorscheme = "gruvbox-material",
+      colorscheme = "gruvbox-material",
       -- colorscheme = "kanagawa-wave",
       -- colorscheme = "kanagawa-lotus",
       -- colorscheme = "kanagawa-dragon",
       -- colorscheme = "atlas",
-      colorscheme = "kanagawa",
+      -- colorscheme = "kanagawa",
     },
   },
 }
