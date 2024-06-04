@@ -39,6 +39,11 @@ return {
           settings = {
             gopls = {
               gofumpt = true,
+              semanticTokens = true,
+              analyses = {
+                fieldalignment = false,
+              },
+
               buildFlags = { "-tags", "integration,concurrent" },
             },
           },
@@ -49,6 +54,7 @@ return {
 
   {
     "leoluz/nvim-dap-go",
+
     optional = true,
     dependencies = {
       "mfussenegger/nvim-dap",
@@ -63,6 +69,7 @@ return {
 
   {
     "nvim-neotest/neotest",
+
     optional = true,
     dependencies = {
       "nvim-neotest/neotest-go",
@@ -79,7 +86,9 @@ return {
 
   {
     "stevearc/conform.nvim",
+
     optional = true,
+
     opts = {
       formatters_by_ft = {
         -- maybe turn of formatting in the LSP?
