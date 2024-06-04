@@ -15,11 +15,10 @@ require("lazy").setup({
       import = "lazyvim.plugins",
     },
     -- import any extras modules here
-    -- import/override with your plugins
     { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.dap.nlua" },
     { import = "lazyvim.plugins.extras.test.core" },
-    { import = "lazyvim.plugins.extras.editor.trouble-v3" },
+    { import = "lazyvim.plugins.extras.ui.treesitter-context" },
     -- { import = "lazyvim.plugins.extras.ui.treesitter-rewrite" },
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.lang.clangd" },
@@ -30,10 +29,10 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.yaml" },
     { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
-    -- { import = "lazyvim.plugins.extras.editor.outline" },
-    -- { import = "lazyvim.plugins.extras.editor.aerial" },
     { import = "lazyvim.plugins.extras.coding.copilot" },
+    -- { import = "lazyvim.plugins.extras.coding.copilot-chat" },
     { import = "lazyvim.plugins.extras.coding.yanky" },
+    { import = "lazyvim.plugins.extras.editor.harpoon2" },
 
     { import = "plugins.languages" },
     { import = "plugins.schemas" },
