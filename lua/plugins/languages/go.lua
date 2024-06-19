@@ -88,13 +88,11 @@ return {
     "stevearc/conform.nvim",
 
     optional = true,
+    enabled = false,
 
     opts = {
       formatters_by_ft = {
-        -- maybe turn of formatting in the LSP?
-        -- for now disable this since imports timeout randomly
-        -- go = { "goimports", "gofumpt" },
-        go = {},
+        go = { "gofumpt" },
       },
     },
   },
