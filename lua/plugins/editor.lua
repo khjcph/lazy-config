@@ -1,17 +1,6 @@
 return {
   { "folke/todo-comments.nvim", enabled = false },
 
-  {
-    "hedyhli/outline.nvim",
-    optional = true,
-
-    opts = {
-      outline_window = {
-        position = "left",
-      },
-    },
-  },
-
   -- {
   --   "lewis6991/gitsigns.nvim",
   --   opts = {
@@ -74,6 +63,7 @@ return {
         require("telescope").load_extension("fzf")
       end,
     },
+
     opts = {
       defaults = {
         sorting_strategy = "descending",
@@ -85,12 +75,13 @@ return {
     "folke/trouble.nvim",
 
     dependencies = { "nvim-tree/nvim-web-devicons" },
+
     keys = {
       -- { "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", desc = "Diagnostics (Trouble)" },
       -- { "<leader>xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", desc = "Buffer Diagnostics (Trouble)" },
       {
         "<leader>cs",
-        "<cmd>Trouble symbols toggle focus=false win.position=left<cr>",
+        "<cmd>Trouble symbols toggle win.position=left win.size=80<cr>",
         desc = "Symbols (Trouble)",
       },
     },

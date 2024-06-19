@@ -14,6 +14,7 @@ return {
     dependencies = {
       "hrsh7th/cmp-emoji",
     },
+
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       local has_words_before = function()
@@ -55,11 +56,13 @@ return {
 
   {
     "CopilotC-Nvim/CopilotChat.nvim",
+
     branch = "canary",
     dependencies = {
       { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
-      { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+      { "nvim-lua/plenary.nvim" },  -- for curl, log wrapper
     },
+
     opts = {
       debug = true, -- Enable debugging
       -- See Configuration section for rest
