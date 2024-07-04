@@ -35,6 +35,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.yanky" },
     { import = "lazyvim.plugins.extras.editor.harpoon2" },
 
+    -- { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
+
     { import = "plugins.languages" },
     { import = "plugins.schemas" },
     { import = "plugins" },
