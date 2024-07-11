@@ -86,9 +86,8 @@ return {
 
   {
     "stevearc/conform.nvim",
-
-    optional = true,
     enabled = false,
+    optional = true,
 
     opts = {
       formatters_by_ft = {
