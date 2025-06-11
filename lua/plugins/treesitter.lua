@@ -1,8 +1,8 @@
 return {
-  { "nvim-treesitter/playground" },
+  { 'nvim-treesitter/playground' },
 
   {
-    "nvim-treesitter/nvim-treesitter",
+    'nvim-treesitter/nvim-treesitter',
 
     opts = {
       playground = {
