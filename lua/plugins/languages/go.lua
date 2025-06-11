@@ -31,7 +31,7 @@
 return {
 
   {
-    "neovim/nvim-lspconfig",
+    'neovim/nvim-lspconfig',
 
     opts = {
       servers = {
@@ -43,8 +43,7 @@ return {
               analyses = {
                 fieldalignment = false,
               },
-
-              buildFlags = { "-tags", "integration,concurrent" },
+              buildFlags = { '-tags', 'integration,concurrent,example' },
             },
           },
         },
@@ -53,46 +52,44 @@ return {
   },
 
   {
-    "leoluz/nvim-dap-go",
+    'stevearc/conform.nvim',
+
+    opts = {
+      formatters_by_ft = {
+        -- go = { 'goimports' },
+        go = {},
+      },
+    },
+  },
+
+  {
+    'leoluz/nvim-dap-go',
 
     optional = true,
     dependencies = {
-      "mfussenegger/nvim-dap",
+      'mfussenegger/nvim-dap',
     },
 
     opts = {
       delve = {
-        build_flags = "-tags=integration",
+        build_flags = '-tags=integration',
       },
     },
   },
 
   {
-    "nvim-neotest/neotest",
-
-    optional = true,
-    dependencies = {
-      "nvim-neotest/neotest-go",
-    },
+    'nvim-neotest/neotest',
 
     opts = {
+      level = vim.log.levels.WARN,
       adapters = {
-        ["neotest-go"] = {
-          args = { "-tags=integration", "-count=1" },
+        ['neotest-golang'] = {
+          -- recursive_run = true,
+          args = { '-tags=integration', '-count=1' },
         },
       },
     },
-  },
 
-  {
-    "stevearc/conform.nvim",
-    enabled = false,
-    optional = true,
-
-    opts = {
-      formatters_by_ft = {
-        go = { "gofumpt" },
-      },
-    },
+    ft = { 'go' },
   },
 }

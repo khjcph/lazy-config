@@ -1,48 +1,30 @@
 return {
   {
-    "kristijanhusak/vim-dadbod-ui",
+    'nvim-neorg/neorg',
 
-    dependencies = {
-      { "tpope/vim-dadbod",                     lazy = true },
-      { "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "plsql" }, lazy = true },
-    },
-
-    cmd = {
-      "DBUI",
-      "DBUIToggle",
-      "DBUIAddConnection",
-      "DBUIFindBuffer",
-    },
-
-    init = function()
-      -- Your DBUI configuration
-      vim.g.db_ui_use_nerd_fonts = 1
-    end,
-  },
-
-  {
-    "nvim-neorg/neorg",
     lazy = false,
-
-    dependencies = { { "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
-
+    version = '*',
+    config = true,
     opts = {
       load = {
-        ["core.defaults"] = {},
-        ["core.concealer"] = {},
-        ["core.integrations.telescope"] = {},
-        ["core.dirman"] = {
+        ['core.defaults'] = {},
+        ['core.concealer'] = {},
+        ['core.presenter'] = {
           config = {
-            index = "index.norg",
+            zen_mode = 'zen-mode',
+          },
+        },
+        ['core.dirman'] = {
+          config = {
+            index = 'index.norg',
             workspaces = {
-              notes = "~/Documents/notes",
-              work = "~/Documents/work",
+              notes = '~/Documents/notes',
+              work = '~/Documents/work',
             },
-            default_workspace = "notes",
+            default_workspace = 'notes',
           },
         },
       },
-
-    }
+    },
   },
 }

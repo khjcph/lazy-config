@@ -1,11 +1,11 @@
 return {
 
-  "mfussenegger/nvim-dap",
+  'mfussenegger/nvim-dap',
 
   dependencies = {
     {
-      "nvim-telescope/telescope-dap.nvim",
-      "nvim-neotest/nvim-nio",
+      'nvim-telescope/telescope-dap.nvim',
+      'nvim-neotest/nvim-nio',
     },
   },
 }
